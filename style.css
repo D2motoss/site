@@ -1,0 +1,124 @@
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar-custom .navbar-item,
+.navbar-custom .navbar-burger span {
+  font-size: 15px;
+  color: white;
+}
+
+.navbar-custom .navbar-item:hover {
+  background-color: #222;
+  color: white;
+}
+
+.navbar-custom .navbar-burger {
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px; /* Altura da vitrine */
+}
+
+.swiper-slide img {
+  width: 2000px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Altera a cor das setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+/* Altera a cor das bolinhas (paginação) */
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+/* Quando a bolinha está ativa (slide atual) */
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.card {
+  color: white;
+  padding: 10px;
+  background-color: black;  
+}
+
+.card .title {
+  color: white
+}
+
+.card-content p.has-text-danger {
+  color: red !important;
+}
+
+.card-content p.has-text-grey {
+  color: rgb(207, 207, 207) !important;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+
+.card-link:hover {
+  transform: scale(1.03);
+}
+
+/* Botão vermelho (Ver mais) */
+#btnVerMais {
+  background-color: #e63946;  /* Vermelho vibrante */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+#btnVerMais:hover {
+  background-color: #c52835;  /* Vermelho mais escuro */
+  box-shadow: 0 6px 12px rgba(197, 40, 53, 0.6);
+  transform: scale(1.05);
+}
+
+#btnVerMais:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(197, 40, 53, 0.8);
+}
+
+/* Botão preto (Ver menos) */
+#btnVerMenos {
+  background-color: #1d1d1d; /* Preto quase puro */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(29, 29, 29, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+#btnVerMenos:hover {
+  background-color: #111111; /* Preto ainda mais escuro */
+  box-shadow: 0 6px 12px rgba(17, 17, 17, 0.8);
+  transform: scale(1.05);
+}
+
+#btnVerMenos:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(17, 17, 17, 0.9);
+}

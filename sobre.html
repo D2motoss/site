@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D2 Motos</title>
+  <link rel="icon" type="image/x-icon" href="imagens/logo_D2_motos.png">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="images/Logo_D2_horizontal.png" alt="Logo da Loja">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="menuPrincipal" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Início</a>
+        <a class="navbar-item" href="motos.html">Estoque</a>
+        <a class="navbar-item" href="sobre.html">Sobre</a>
+        <a class="navbar-item" href="contato.html">Contato</a>
+        <a class="navbar-item" href="localizacao.html">Localização</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="imagens/Fachada_D2Motos.jpg" alt="Moto 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="imagens/Banner_zap_D2motos.png" alt="Moto 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/motos2.png" alt="Moto 3" />
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title has-text-centered">Sobre a D2 Motos</h1>
+
+    <div class="content is-medium">
+      <p>
+        A <strong>D2 Motos</strong> é uma loja especializada em motocicletas novas e seminovas, com atuação no mercado há mais de 3 anos.
+        Nosso objetivo é oferecer aos clientes as melhores opções de motos, com qualidade, confiança e um atendimento diferenciado.
+      </p>
+
+      <p>
+        Contamos com uma equipe apaixonada por duas rodas, pronta para ajudar você a encontrar a moto ideal para o seu estilo de vida.
+      </p>
+
+      <p>
+        Localizada em Itajaí - SC, a D2 Motos é referência regional pela seriedade, transparência nas negociações e pela grande variedade de modelos disponíveis em estoque.
+        Se você busca economia, estilo ou performance, aqui é o seu lugar.
+      </p>
+
+      <p>
+        Venha nos visitar ou entre em contato para conhecer mais sobre nossos serviços. Aqui, o seu sonho espera por você!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Rodapé -->
+<footer class="footer has-background-black has-text-white-ter">
+  <div class="content has-text-centered">
+    <p class="title is-5 has-text-white">Contato</p>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-narrow">
+        <p><strong>WhatsApp:</strong> <br>
+          (47) 99626-4683 <br>
+          (47) 99683-4199</p>
+        <p><strong>Email:</strong> <br>
+          d2motosm@gmail.com</p>
+        <p><strong>Horário de atendimento:</strong> <br>
+          Seg a Sex - 08:30h às 12h e 13:30h às 18h <br>
+          Sábado - 8:30h às 12h </p>
+      </div>
+    </div>
+
+    <p class="is-size-7 has-text-grey-light mt-4">
+      &copy; 2025 D2 Motos. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<script>
+
+</script>
+
+</body>
+</html>
