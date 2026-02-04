@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D2 Motos</title>
+  <link rel="icon" type="image/x-icon" href="imagens/logo_D2_motos.png">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="images/Logo_D2_horizontal.png" alt="Logo da Loja">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="menuPrincipal" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="index.html">Início</a>
+        <a class="navbar-item" href="motos.html">Estoque</a>
+        <a class="navbar-item" href="sobre.html">Sobre</a>
+        <a class="navbar-item" href="contato.html">Contato</a>
+        <a class="navbar-item" href="localizacao.html">Localização</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="imagens/Fachada_D2Motos.jpg" alt="Moto 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="imagens/Banner_zap_D2motos.png" alt="Moto 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/motos2.png" alt="Moto 3" />
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<!-- Seção das motos -->
+<section class="section">
+  <div class="container">
+    <h1 class="title has-text-centered mb-6">Onde Estamos</h1>
+
+    <div class="box" style="padding: 0; overflow: hidden; border-radius: 12px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.60555685402767!2d-48.67800340748702!3d-26.893407980793963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cd77ec2b8a03%3A0xd51e968266a9eb7e!2sD2%20Motos!5e1!3m2!1spt-BR!2sbr!4v1751230144629!5m2!1spt-BR!2sbr"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="content is-medium mt-5 has-text-centered">
+      <p><strong>Endereço:</strong> Av. Irineu Bornhausen, 235 - São João, Itajaí - SC</p>
+      <p><strong>Horário de Funcionamento:</strong> <br>
+          Seg a Sex - 08:30h às 12h e 13:30h às 18h <br>
+          Sábado - 8:30h às 12h </p>
+      <a
+        class="button is-danger is-medium mt-3"
+        href="https://www.google.com/maps/dir/?api=1&destination=-26.893407980793963,-48.67800340748702"
+        target="_blank"
+      >
+        <i class="fas fa-map-marked-alt mr-2"></i> Ver rota no Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Rodapé -->
+<footer class="footer has-background-black has-text-white-ter">
+  <div class="content has-text-centered">
+    <p class="title is-5 has-text-white">Contato</p>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-narrow">
+        <p><strong>WhatsApp:</strong> <br>
+          (47) 99626-4683 <br>
+          (47) 99683-4199</p>
+        <p><strong>Email:</strong> <br>
+          d2motosm@gmail.com</p>
+        <p><strong>Horário de atendimento:</strong> <br>
+          Seg a Sex - 08:30h às 12h e 13:30h às 18h <br>
+          Sábado - 8:30h às 12h </p>
+      </div>
+    </div>
+
+    <p class="is-size-7 has-text-grey-light mt-4">
+      &copy; 2025 D2 Motos. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar-custom .navbar-item,
+.navbar-custom .navbar-burger span {
+  font-size: 15px;
+  color: white;
+}
+
+.navbar-custom .navbar-item:hover {
+  background-color: #222;
+  color: white;
+}
+
+.navbar-custom .navbar-burger {
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px; /* Altura da vitrine */
+}
+
+.swiper-slide img {
+  width: 2000px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Altera a cor das setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+/* Altera a cor das bolinhas (paginação) */
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+/* Quando a bolinha está ativa (slide atual) */
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.card {
+  color: white;
+  padding: 10px;
+  background-color: black;  
+}
+
+.card .title {
+  color: white
+}
+
+.card-content p.has-text-danger {
+  color: red !important;
+}
+
+.card-content p.has-text-grey {
+  color: rgb(207, 207, 207) !important;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+
+.card-link:hover {
+  transform: scale(1.03);
+}
+
+/* Botão vermelho (Ver mais) */
+#btnVerMais {
+  background-color: #e63946;  /* Vermelho vibrante */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+#btnVerMais:hover {
+  background-color: #c52835;  /* Vermelho mais escuro */
+  box-shadow: 0 6px 12px rgba(197, 40, 53, 0.6);
+  transform: scale(1.05);
+}
+
+#btnVerMais:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(197, 40, 53, 0.8);
+}
+
+/* Botão preto (Ver menos) */
+#btnVerMenos {
+  background-color: #1d1d1d; /* Preto quase puro */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(29, 29, 29, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+#btnVerMenos:hover {
+  background-color: #111111; /* Preto ainda mais escuro */
+  box-shadow: 0 6px 12px rgba(17, 17, 17, 0.8);
+  transform: scale(1.05);
+}
+
+#btnVerMenos:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(17, 17, 17, 0.9);
+}
+
+.btn.voltar {
+  background: #f1f1f1;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.btn.voltar:hover {
+  background: #e6e6e6;
+}
+
+.detalhes-moto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  align-items: stretch;
+}
+
+/* GALERIA */
+.galeria-moto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imagem-principal-wrapper {
+  flex: 1;
+  max-height: 520px; /* 🔥 TRAVA REAL */
+  position: relative;
+  background: #f3f3f3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.imagem-principal-wrapper img {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* SETAS */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav.esquerda { left: 15px; }
+.nav.direita { right: 15px; }
+
+/* MINIATURAS */
+.miniaturas-wrapper {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.thumb {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 2px solid transparent;
+}
+
+.thumb.ativa {
+  opacity: 1;
+  border-color: #e30613;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .detalhes-moto {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-principal-wrapper {
+    min-height: 300px;
+  }
+}
+
+.info h1 {
+  font-family: unset;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.preco {
+  font-size: 32px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.card span {
+  font-size: 17px;
+  color: white;
+}
+
+.card strong {
+  color: white;
+  display: block;
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+.descricao {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 17px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn.whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn.whatsapp:hover {
+  background: #1ebe5b;
+}
+
+.localizacao {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.localizacao h2 {
+  margin-bottom: 15px;
+}
+
+.localizacao iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ZOOM AO HOVER */
+.imagem-principal-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.imagem-principal-wrapper:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== ZOOM LUPA ===== */
+
+#zoomContainer {
+  position: relative;
+}
+
+#lupa {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #e30613;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  pointer-events: none;
+  display: none;
+  z-index: 20;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Desativa lupa no mobile */
+@media (max-width: 768px) {
+  #lupa {
+    display: none !important;
+  }
+}
+
+
+/* MOBILE FIRST */
+@media (max-width: 768px) {
+
+  .detalhes-moto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .galeria-moto {
+    max-width: 100%;
+  }
+
+  .imagem-principal-wrapper {
+    aspect-ratio: 4 / 3;
+    max-height: 320px;
+  }
+
+  .imagem-principal-wrapper img {
+    object-fit: contain;
+  }
+
+  .miniaturas-wrapper {
+    justify-content: center;
+  }
+
+  .info h1 {
+    font-size: 22px;
+  }
+
+  .preco {
+    font-size: 26px;
+  }
+
+}
